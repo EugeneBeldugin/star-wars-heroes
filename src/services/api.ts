@@ -41,8 +41,8 @@ export const starWarsApi = createApi({
       // @ts-ignore - required for multiple concurrent requests
       async queryFn(
         { heroId, films, starships },
-        queryApi,
-        extraOptions,
+        _queryApi,
+        _extraOptions,
         fetchWithBQ
       ) {
         const filmsResponse = await fetchWithBQ(
